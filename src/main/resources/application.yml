@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: payment-service
+  server:
+    port: 8080
+
+  feign:
+    client:
+      config:
+        default:
+          http:
+            connectTimeout: 5000
+            readTimeout: 5000
+
+service-register:
+  url: ${SERVICE_REGISTER_URL}
